@@ -16,7 +16,7 @@
 <meta property="og:description" content="这次课程设计是在大二上学期修“微机原理及单片机”这门课上做的一次课程设计。我们课程设计的内容是“电子音乐小钢琴”，这篇博客主要就是写了设计过程及结果。 概述单片机简介单片机（Microcontrollers）是一种集成电路芯片，是采用超大规模集成电路 技术把具有数据处理能力的中央处理器 CPU、随机存储器 RAM、只读存储器 ROM、多种 I&#x2F;O 口和中断系统、定时器&#x2F;计数器等功能（可能还包括显">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-14T14:12:58.000Z">
-<meta property="article:modified_time" content="2020-03-14T16:01:24.596Z">
+<meta property="article:modified_time" content="2020-03-14T16:03:18.803Z">
 <meta property="article:author" content="Groinig">
 <meta property="article:tag" content="report">
 <meta name="twitter:card" content="summary">
@@ -245,8 +245,8 @@
 <ul>
 <li>方法一：<br>逐行扫描：我们可以通过高四位轮流输出低电平来对矩阵键盘进行逐行扫描， 当低四位接收到的数据不全为<code>1</code> 的时候，说明有按键按下，然后通过接收到的数<br>据是哪一位为<code>0</code>来判断是哪一个按键按下。 </li>
 <li>方法二：<br>行列扫描：我们可以通过高四位全部输出低电平，低四位输出高电平。当接收到的数据，低四位不全为高电平时，说明有按键按下，然后通过接收的数据值，判断是哪一列有按键按下，然后再反过来，高四位输出高电平，低四位输出低电 平，然后根据接收到的高四位的值判断是哪一行有按键按下，这样就能够确定是 哪一个按键按下了。</li>
-<li><em>本次设计中我们采用行列扫描的方法，我们将<code>JP3</code> 跟单片机的<code>P1</code>端口连接。*</em></li>
 </ul>
+<p><strong>本次设计中我们采用行列扫描的方法，我们将<code>JP3</code> 跟单片机的<code>P1</code>端口连接。</strong></p>
 <center>  <!--开始居中对齐-->
 ![图2.6 矩阵按键模块](/asset/img/2.6.jpg "图片Title")
 </center> <!--结束居中对齐-->
@@ -565,11 +565,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">report</a>
+                <a href="javascript:void(0)" class="js-tag color2">C</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">C</a>
+                <a href="javascript:void(0)" class="js-tag color2">report</a>
               </li>
             
             <div class="clearfix"></div>
