@@ -28,7 +28,7 @@
 <meta property="og:image" content="http://www.linjieblog.top/2020/03/15/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86%E5%8F%8A%E5%8D%95%E7%89%87%E6%9C%BA%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/%E6%80%BB%E4%BD%93%E6%B5%81%E7%A8%8B%E5%9B%BE.png">
 <meta property="og:image" content="http://www.linjieblog.top/2020/03/15/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86%E5%8F%8A%E5%8D%95%E7%89%87%E6%9C%BA%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/%E8%BF%9E%E6%8E%A5%E5%9B%BE.jpg">
 <meta property="article:published_time" content="2020-03-14T17:09:33.000Z">
-<meta property="article:modified_time" content="2020-03-16T01:50:44.157Z">
+<meta property="article:modified_time" content="2020-03-30T09:15:35.320Z">
 <meta property="article:author" content="Groinig">
 <meta property="article:tag" content="课程设计">
 <meta property="article:tag" content="report">
@@ -246,12 +246,12 @@
 <h2 id="硬件设计"><a href="#硬件设计" class="headerlink" title="硬件设计"></a>硬件设计</h2><p>本设计系统主要分为五个部分：<strong>红外接收模块</strong>、<strong>矩阵按键模块</strong>、<strong>蜂鸣器模块</strong>、 <strong>数码管模块</strong>、<strong>点阵模块</strong>、<strong>AT89C516单片机系统</strong>。整个设计以单片机为控制核心， 处理接收到的红外信号，独立键盘按键信号并让蜂鸣器发声以及让数码管显示当 前发声的音调。系统组成框如图 2.1</p>
 <center>
     <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" src="/2020/03/15/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86%E5%8F%8A%E5%8D%95%E7%89%87%E6%9C%BA%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/1.jpg">
+    box-shadow: 0 1px 4px 0 rgba(34,36,38,.12),0 1px 10px 0 rgba(34,36,38,.08);" src="/2020/03/15/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86%E5%8F%8A%E5%8D%95%E7%89%87%E6%9C%BA%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/1.jpg">
     <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    <div style="color:orange; border-bottom: 1px  #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">图2.1系统组成框图</div>
+    padding: 1px;">图2.1系统组成框图</div>
 </center>
 
 <h3 id="STC89C51"><a href="#STC89C51" class="headerlink" title="STC89C51"></a>STC89C51</h3><p>此部分为单片机最小系统，单片机最小系统以89C52为核心,外加晶振电路、复位电路、电源、接地。电路结构构成简单，所以成本也比较低，但抗干扰能力还是很强的。为了让单片机有序运行，需要给其一个时钟模块作为参考，这就是时钟振荡电路，电源所选用的是+5V 的电源，可直接由稳压电源提供，如图 2.2。</p>
