@@ -24,7 +24,7 @@
 <meta property="og:image" content="http://www.linjieblog.top/2020/06/04/Voice-signal-processing/Audio_6.png">
 <meta property="og:image" content="http://www.linjieblog.top/2020/06/04/Voice-signal-processing/Audio_7.png">
 <meta property="article:published_time" content="2020-06-04T01:31:45.000Z">
-<meta property="article:modified_time" content="2020-06-04T03:02:29.689Z">
+<meta property="article:modified_time" content="2020-06-04T03:26:26.858Z">
 <meta property="article:author" content="Groinig">
 <meta property="article:tag" content="Matlab">
 <meta name="twitter:card" content="summary">
@@ -214,11 +214,11 @@
         <p>通过Matlab对语音信号波形、频谱分析。对语音信号加入噪声之后的频谱分析，通过设计滤波器指标实现对加入噪声之后的信号滤波还原原始信号.最后通过内插跟抽取频谱分析验证采样定理。</p>
 <a id="more"></a>
 
-<h3 id="实验内容"><a href="#实验内容" class="headerlink" title="实验内容"></a>实验内容</h3><p>语音信号处理综合运用了数字信号处理的理论知识，对信号进行计算及频谱分析，设计滤波器，并对含噪信号进行滤波。<br>具体分为以下步骤：</p>
+<h2 id="实验内容"><a href="#实验内容" class="headerlink" title="实验内容"></a>实验内容</h2><p>语音信号处理综合运用了数字信号处理的理论知识，对信号进行计算及频谱分析，设计滤波器，并对含噪信号进行滤波。<br>具体分为以下步骤：</p>
 <blockquote>
 <p>(1）语音信号的采集：利用Windows下的录音机，录制一段话音。然后在Matlab软件平台下，对语音信号进行采样，播放语音信号，并绘制原始语音信号；<br>(2）对原始信号加入噪声：对原始语音信号加入$$x=\sin(2\times\pi\times f \times T_s \times n)$$ 的噪声，采样后可知$f_s$，选择$f=2500$，播放加入噪声信号的语音信号，并绘制噪声信号和含噪语音信号；<br>(3) 频谱分析：分别对原始语音信号，噪声信号和含噪声的语音信号进行频谱分析，并绘出各频谱图；<br>(4) 设计滤波器：计算滤波器的性能指标，设计滤波器，绘制滤波器的特性曲线；<br>(5) 滤波器滤波：用自己设计的滤波器对采集的信号进行滤波，得出滤波后信号的时域波形和频谱，并对滤波前后的信号进行对比，分析信号的变化，并回放语音信号，感觉滤波前后的声音有变化。<br>(6) 对原始信号进行整数倍抽取，比较抽取前后的频谱图<br>(7) 对原始信号进行整数倍内插，比较原始信号频谱，内插1值时的频谱和滤波后的频谱图。</p>
 </blockquote>
-<h3 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h3><blockquote>
+<h2 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h2><blockquote>
 <p>(1) 语音信号的采集：利用Windows下的录音机，录制一段话音。然后在Matlab软件平台下，对语音信号进行采样，播放语音信号，并绘制原始语音信号；</p>
 </blockquote>
 <p><strong>程序代码</strong></p>
@@ -351,7 +351,7 @@
     padding: 1px;">图1.7 整数倍插值对比图</div>
 </center>
 
-<h3 id="实验总结"><a href="#实验总结" class="headerlink" title="实验总结"></a>实验总结</h3><ul>
+<h2 id="实验总结"><a href="#实验总结" class="headerlink" title="实验总结"></a>实验总结</h2><ul>
 <li>对原始信号加入噪声后播放，声音中明显存在单频尖锐噪声。后对信号+噪声信号进行滤波后，播放声音中仍留有少量的噪声信号，且整体信号不如原始信号明亮，原因是采用低通滤波器滤去高频噪声时，原信号高频信号也被滤去了，所以声音没有加噪前丰富，显得低沉。</li>
 <li>对原始信号进行整数倍抽取，相当于降低采样频率，由图可知，当抽取倍数为16倍时出现了明显的频谱混叠现象。原因是由于抽样频率$f_s$ 不满足$f_s\geq 2f_h$ ,从而周期延拓时出现了频谱混叠现象。而对信号进行整数倍内插则没有使信号频谱变差。</li>
 </ul>
@@ -567,7 +567,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#实验内容"><span class="toc-number">1.</span> <span class="toc-text">实验内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#问题分析"><span class="toc-number">2.</span> <span class="toc-text">问题分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实验总结"><span class="toc-number">3.</span> <span class="toc-text">实验总结</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#实验内容"><span class="toc-number">1.</span> <span class="toc-text">实验内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#问题分析"><span class="toc-number">2.</span> <span class="toc-text">问题分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实验总结"><span class="toc-number">3.</span> <span class="toc-text">实验总结</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -761,14 +761,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">实验</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">报告</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">无线蓝牙耳机</a>
               </li>
              
@@ -778,6 +770,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">发展前景</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">实验</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">报告</a>
               </li>
              
               <li class="article-tag-list-item">
